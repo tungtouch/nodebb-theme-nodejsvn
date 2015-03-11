@@ -1,0 +1,17 @@
+{
+	"id": "nodebb-theme-nodejsvn",
+	"library": "./lib/theme.js",
+	"hooks": [
+		{
+			"hook": "filter:widgets.getAreas", "method": "defineWidgetAreas", "callbacked": true
+		}
+	],
+	"staticDirs": {
+		"vendor": "static/vendor"
+	},
+	"scripts": [
+		"static/lib/nodejsvn.js",
+        "static/vendor/bootstrap-material/scripts/material.js",
+        "static/vendor/bootstrap-material/scripts/ripples.js"
+	]
+}
