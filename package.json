@@ -9,6 +9,7 @@
   },
   "keywords": [
     "nodebb",
+<<<<<<< HEAD
     "nodejs",
     "nodejsvn",
     "themes"
@@ -16,6 +17,15 @@
   "author": {
     "name": "tungnguyen",
     "email": "tungnguyen@vsoft.vn"
+=======
+    "nodejsvn",
+    "theme",
+    "themes"
+  ],
+  "author": {
+    "name": "tungtouch",
+    "email": "tungnguyen@gmail.com"
+>>>>>>> 0f4049ee6a155569fbcfed46292d8fe021e6c79f
   },
   "license": "BSD-2-Clause",
   "bugs": {
@@ -24,10 +34,16 @@
   "peerDependencies": {
     "nodebb-theme-vanilla": "^0.2.0"
   },
+<<<<<<< HEAD
   "readme": "Nodejsvn Theme for NodeBB",
   "readmeFilename": "README.md",
   "homepage": "https://github.com/tungtouch/nodebb-theme-nodejsvn",
   "_id": "nodebb-theme-nodejsvn@0.1.1",
+=======
+  "readmeFilename": "README.md",
+  "homepage": "https://github.com/tungtouch/nodebb-theme-nodejsvn",
+  "_id": "nodebb-theme-lavender@0.2.13",
+>>>>>>> 0f4049ee6a155569fbcfed46292d8fe021e6c79f
   "_shasum": "0b38a2c4380261721ae0af5d4bb99d1c7c01127d",
   "_from": "https://registry.npmjs.org/nodebb-theme-nodejsvn/-/nodebb-theme-nodejsvn-0.1.0.tgz",
   "_resolved": "https://registry.npmjs.org/nodebb-theme-nodejsvn/-/nodebb-theme-nodejsvn-0.1.0.tgz"
