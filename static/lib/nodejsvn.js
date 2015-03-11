@@ -3,6 +3,17 @@ $('document').ready(function() {
 		'static/vendor/imagesLoaded'
 	], function(imagesLoaded) {
 
+		$(".quick-menu-left").hover(
+			function(){
+			$("#content").addClass('blur');
+			}, function(){
+			$("#content").removeClass('blur');
+			});
+
+		$(".toggleQuickMenu").click(function () {
+			console.log("Toggle Class");
+			//$("#content").toggleClass('blur');
+		});
 
 		$(window).on('action:ajaxify.end', function(ev, data) {
 			var url = data.url;
@@ -15,9 +26,6 @@ $('document').ready(function() {
 			}
 		});
 
-
-
-
 	});
 
 	(function() {
@@ -25,6 +33,12 @@ $('document').ready(function() {
 		var refreshTitle = app.refreshTitle,
 			loadingBar = $('.loading-bar');
 
+		socket.on('event:user_status_change', function(){
+			console.log('user status 2:', arguments);
+			$.get(RELATIVE_PATH + '/api/user/psychobunny', {}, function(user) {
+				console.log(user)
+			});
+		});
 		$(window).on('action:ajaxify.start', function(data) {
 			loadingBar.fadeIn(0).removeClass('reset');
 		});

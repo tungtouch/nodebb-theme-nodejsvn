@@ -1,5 +1,6 @@
 <div class="row home" itemscope itemtype="http://www.schema.org/ItemList">
     <div class="col-lg-7 col-sm-12">
+        [[global:header.recent]]
         <div widget-area="main"></div>
     </div>
 	<div class="col-lg-3" style="margin-left: 15px;" no-widget-class="col-lg-3" no-widget-target="sidebar">
@@ -27,35 +28,42 @@
 							<!-- ENDIF !categories.link -->
 
 							<!-- IF categories.icon -->
-							<div><i class="fa {categories.icon} fa-4x"></i></div>
+							<div class="pull-left categories-icon"><i class="fa {categories.icon} fa-2x"></i></div>
 							<!-- ENDIF categories.icon -->
+                            <div class="category-info">
+                                <!-- IF categories.link -->
+                                <a href="{categories.link}" itemprop="url" target="_blank">
+                                    <!-- ELSE -->
+                                    <a href="{relative_path}/category/{categories.slug}" itemprop="url">
+                                        <!-- ENDIF categories.link-->
+                                        <h4><!-- IF categories.icon --><i class="fa {categories.icon} visible-xs-inline"></i> <!-- ENDIF categories.icon -->{categories.name}</h4>
+                                    </a>
+                            </div>
 						</div>
 					</a>
 
 					<div class="category-box">
+                        <div class="list-group">
+                        <!-- IF !categories.link -->
+                        <!-- BEGIN posts -->
 
-						<!-- IF !categories.link -->
-						<!-- BEGIN posts -->
-						<div class="post-preview clearfix">
-							<div class="post-preview-content">
-								<strong><a href="{relative_path}/topic/{categories.posts.topic.slug}">{categories.posts.topic.title}</a></strong>
-								<div class="content">
-								{categories.posts.content}
-								</div>
+                            <div class="list-group-item">
+                                <div class="row-picture">
+                                    <img class="circle" src="http://lorempixel.com/56/56/people/1" alt="icon">
+                                </div>
+                                <div class="row-content">
+                                    <h4 class="list-group-item-heading"><a href="{relative_path}/topic/{categories.posts.topic.slug}">{categories.posts.topic.title}</a>&bull; <span class="timeago" title="{categories.posts.relativeTime}"></span></h4>
 
-							</div>
-							<span class="pull-right footer">
-								<span class="timeago" title="{categories.posts.relativeTime}"></span> &bull;
+                                </div>
+                            </div>
+                            <div class="list-group-separator"></div>
+                            <!-- END posts -->
+                            <!-- ENDIF !categories.link -->
+                        </div>
 
-							</span>
-						</div>
-						<!-- END posts -->
-						<!-- ENDIF !categories.link -->
 					</div>
 				</div>
 			</div>
 			<!-- END categories -->
 	</div>
-
-	<div widget-area="sidebar" class="col-lg-3 col-sm-12"></div>
 </div>

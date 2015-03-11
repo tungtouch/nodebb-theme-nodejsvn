@@ -1,7 +1,7 @@
 {
     "id": "nodebb-theme-nodejsvn",
     "name": "Nodejs Theme for NodeBB",
-    "description": "A simple theme for NodeBB. Check out the theming guide that accompanies this work at http://burnaftercompiling.com",
-    "url": "https://www.github.com/psychobunny/nodebb-theme-lavender",
+    "description": "Theme nodejs.vn for nodebb",
+    "url": "https://registry.npmjs.org/nodebb-theme-nodejsvn/-/nodebb-theme-nodejsvn-0.1.0.tgz",
     "screenshot": "screenshot.png"
 }

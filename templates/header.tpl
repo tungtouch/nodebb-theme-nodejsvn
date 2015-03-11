@@ -50,6 +50,20 @@
 		<div class="loading-bar"></div>
 			<!-- IMPORT partials/menu.tpl -->
 	</div>
+    <div class="quick-menu-left">
 
+        <div class="quick-menu-header">
+            <div class="text-header">Category</div>
+        </div>
+        <div class="quick-menu-content">
+            TEXT TEXT
+            <div widget-area="quickmenu"></div>
+        </div>
+    </div>
+    <div class="user-online">
+        <div class="user-content">
+
+        </div>
+    </div>
 	<div class="container" id="content">
 	<!-- IMPORT partials/noscript/warning.tpl -->

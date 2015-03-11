@@ -23,6 +23,11 @@
 			<div class="navbar-collapse collapse navbar-ex1-collapse">
 				<!-- IF !maintenanceHeader -->
 				<ul id="main-nav" class="nav navbar-nav pull-left">
+                    <li>
+                        <a href="#" class="toggleQuickMenu">
+                            <i class="mdi-navigation-menu"></i><span class="visible-xs-inline"></span>
+                        </a>
+                    </li>
 					<!-- IF loggedIn -->
 					<li>
 						<a href="{relative_path}/unread" title="[[global:header.unread]]">
