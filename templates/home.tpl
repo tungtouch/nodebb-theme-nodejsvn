@@ -1,9 +1,8 @@
 <div class="row home" itemscope itemtype="http://www.schema.org/ItemList">
-    <div class="col-lg-7 col-sm-12">
-        [[global:header.recent]]
+    <div class="col-lg-7 col-md-8 col-sm-12 col-xs-12">
         <div widget-area="main"></div>
     </div>
-	<div class="col-lg-3" style="margin-left: 15px;" no-widget-class="col-lg-3" no-widget-target="sidebar">
+	<div class="col-lg-3 col-md-3 col-xs-12 col-sm-12" style="margin-left: 15px;" no-widget-class="col-lg-3 col-md-3 col-sm-12 col-xs-12" no-widget-target="sidebar">
 
 			<!-- BEGIN categories -->
 			<div class="<!-- IF categories.class -->{categories.class}<!-- ELSE -->categories<!-- ENDIF categories.class --> category-item" data-cid="{categories.cid}" data-numRecentReplies="{categories.numRecentReplies}">

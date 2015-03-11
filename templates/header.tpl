@@ -56,13 +56,15 @@
             <div class="text-header">Category</div>
         </div>
         <div class="quick-menu-content">
-            TEXT TEXT
+
             <div widget-area="quickmenu"></div>
         </div>
     </div>
     <div class="user-online">
         <div class="user-content">
+            <ul class="list-unstyled">
 
+            </ul>
         </div>
     </div>
 	<div class="container" id="content">
