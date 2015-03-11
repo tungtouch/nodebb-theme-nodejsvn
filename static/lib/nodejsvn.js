@@ -35,9 +35,7 @@ $('document').ready(function() {
 
 		socket.on('event:user_status_change', function(){
 			console.log('user status 2:', arguments);
-			$.get(RELATIVE_PATH + '/api/user/psychobunny', {}, function(user) {
-				console.log(user)
-			});
+
 		});
 		$(window).on('action:ajaxify.start', function(data) {
 			loadingBar.fadeIn(0).removeClass('reset');
